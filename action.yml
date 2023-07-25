@@ -1,0 +1,19 @@
+name: 'Your name here'
+description: 'Provide a description here'
+author: 'Your name or organization here'
+inputs:
+  openobserve_endpoint: 
+    description: 'Endpoint to your OpenObserver server eg. https://api.openobserve.ai/api/[org_id]/default/_json'
+    required: true
+  openobserve_username: 
+    description: 'Your OpenObserver username'
+    required: true
+  openobserve_key: 
+    description: 'Key/Password for your OpenObserver username'
+    required: true
+  github_token: 
+    description: 'github token, pass in from secrets.GITHUB_TOKEN'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
