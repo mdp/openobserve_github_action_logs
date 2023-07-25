@@ -1,0 +1,27 @@
+{
+  "name": "openobserve_github_action_logs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdp/openobserve_github_action_logs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdp/openobserve_github_action_logs/issues"
+  },
+  "homepage": "https://github.com/mdp/openobserve_github_action_logs#readme",
+  "dependencies": {
+    "@actions/github": "^5.1.1",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
+  }
+}
