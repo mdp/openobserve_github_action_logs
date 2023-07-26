@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "openobserve-github-action-logs",
+  "version": "0.0.1",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Upload Github Action logs to OpenObserve",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
