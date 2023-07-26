@@ -1,5 +1,6 @@
-name: 'OpenObserve Github Action Logs'
-description: 'Send the logs from Github Actions to OpenObserve'
+name: 'Your name here'
+description: 'Provide a description here'
+author: 'Your name or organization here'
 inputs:
   openobserve_endpoint: 
     description: 'Endpoint to your OpenObserver server eg. https://api.openobserve.ai/api/[org_id]/default/_json'
@@ -12,4 +13,4 @@ inputs:
     required: true
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'dist/index.js'

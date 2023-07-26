@@ -1,0 +1,198 @@
+2023-07-25T17:52:33.2641972Z Requested labels: ubuntu-latest
+2023-07-25T17:52:33.2642330Z Job defined at: mdp/openobserve_github_action_logs/.github/workflows/test.yaml@refs/heads/mdp/actions
+2023-07-25T17:52:33.2642505Z Waiting for a runner to pick up this job...
+2023-07-25T17:52:33.9473112Z Job is waiting for a hosted runner to come online.
+2023-07-25T17:52:38.4401660Z Job is about to start running on the hosted runner: GitHub Actions 2 (hosted)
+2023-07-25T17:52:43.4781579Z Current runner version: '2.306.0'
+2023-07-25T17:52:43.4815226Z ##[group]Operating System
+2023-07-25T17:52:43.4815952Z Ubuntu
+2023-07-25T17:52:43.4816959Z 22.04.2
+2023-07-25T17:52:43.4817592Z LTS
+2023-07-25T17:52:43.4818254Z ##[endgroup]
+2023-07-25T17:52:43.4818712Z ##[group]Runner Image
+2023-07-25T17:52:43.4819345Z Image: ubuntu-22.04
+2023-07-25T17:52:43.4819985Z Version: 20230716.1.0
+2023-07-25T17:52:43.4820646Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20230716.1/images/linux/Ubuntu2204-Readme.md
+2023-07-25T17:52:43.4821380Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20230716.1
+2023-07-25T17:52:43.4821923Z ##[endgroup]
+2023-07-25T17:52:43.4822362Z ##[group]Runner Image Provisioner
+2023-07-25T17:52:43.4822850Z 2.0.238.1
+2023-07-25T17:52:43.4823170Z ##[endgroup]
+2023-07-25T17:52:43.4824022Z ##[group]GITHUB_TOKEN Permissions
+2023-07-25T17:52:43.4824792Z Contents: read
+2023-07-25T17:52:43.4825213Z Metadata: read
+2023-07-25T17:52:43.4826178Z Packages: read
+2023-07-25T17:52:43.4826672Z ##[endgroup]
+2023-07-25T17:52:43.4831680Z Secret source: Actions
+2023-07-25T17:52:43.4832299Z Prepare workflow directory
+2023-07-25T17:52:43.5754667Z Prepare all required actions
+2023-07-25T17:52:43.5997780Z Getting action download info
+2023-07-25T17:52:43.8559243Z Download action repository 'actions/checkout@v3' (SHA:c85c95e3d7251135ab7dc9ce3241c5835cc595a9)
+2023-07-25T17:52:44.5699918Z Download action repository 'actions/setup-node@v3' (SHA:e33196f7422957bea03ed53f6fbb155025ffc7b8)
+2023-07-25T17:52:45.4112699Z Complete job name: build (16.x)
+2023-07-25T17:52:45.5309008Z ##[group]Run actions/checkout@v3
+2023-07-25T17:52:45.5309387Z with:
+2023-07-25T17:52:45.5309670Z   repository: mdp/openobserve_github_action_logs
+2023-07-25T17:52:45.5310280Z   token: ***
+2023-07-25T17:52:45.5310540Z   ssh-strict: true
+2023-07-25T17:52:45.5310801Z   persist-credentials: true
+2023-07-25T17:52:45.5311066Z   clean: true
+2023-07-25T17:52:45.5311340Z   sparse-checkout-cone-mode: true
+2023-07-25T17:52:45.5311640Z   fetch-depth: 1
+2023-07-25T17:52:45.5311867Z   lfs: false
+2023-07-25T17:52:45.5312096Z   submodules: false
+2023-07-25T17:52:45.5312351Z   set-safe-directory: true
+2023-07-25T17:52:45.5312623Z ##[endgroup]
+2023-07-25T17:52:45.8481579Z Syncing repository: mdp/openobserve_github_action_logs
+2023-07-25T17:52:45.8483871Z ##[group]Getting Git version info
+2023-07-25T17:52:45.8484735Z Working directory is '/home/runner/work/openobserve_github_action_logs/openobserve_github_action_logs'
+2023-07-25T17:52:45.8487843Z [command]/usr/bin/git version
+2023-07-25T17:52:45.8579380Z git version 2.41.0
+2023-07-25T17:52:45.8617704Z ##[endgroup]
+2023-07-25T17:52:45.8640781Z Temporarily overriding HOME='/home/runner/work/_temp/f02620dd-6e87-4fde-807a-7cb2bd6d2108' before making global git config changes
+2023-07-25T17:52:45.8641382Z Adding repository directory to the temporary git global config as a safe directory
+2023-07-25T17:52:45.8647338Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/openobserve_github_action_logs/openobserve_github_action_logs
+2023-07-25T17:52:45.8699368Z Deleting the contents of '/home/runner/work/openobserve_github_action_logs/openobserve_github_action_logs'
+2023-07-25T17:52:45.8706694Z ##[group]Initializing the repository
+2023-07-25T17:52:45.8710859Z [command]/usr/bin/git init /home/runner/work/openobserve_github_action_logs/openobserve_github_action_logs
+2023-07-25T17:52:45.8813198Z hint: Using 'master' as the name for the initial branch. This default branch name
+2023-07-25T17:52:45.8814463Z hint: is subject to change. To configure the initial branch name to use in all
+2023-07-25T17:52:45.8815806Z hint: of your new repositories, which will suppress this warning, call:
+2023-07-25T17:52:45.8816575Z hint: 
+2023-07-25T17:52:45.8817730Z hint: 	git config --global init.defaultBranch <name>
+2023-07-25T17:52:45.8818455Z hint: 
+2023-07-25T17:52:45.8819865Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2023-07-25T17:52:45.8821155Z hint: 'development'. The just-created branch can be renamed via this command:
+2023-07-25T17:52:45.8822814Z hint: 
+2023-07-25T17:52:45.8823572Z hint: 	git branch -m <name>
+2023-07-25T17:52:45.8834801Z Initialized empty Git repository in /home/runner/work/openobserve_github_action_logs/openobserve_github_action_logs/.git/
+2023-07-25T17:52:45.8848141Z [command]/usr/bin/git remote add origin https://github.com/mdp/openobserve_github_action_logs
+2023-07-25T17:52:45.8906900Z ##[endgroup]
+2023-07-25T17:52:45.8907963Z ##[group]Disabling automatic garbage collection
+2023-07-25T17:52:45.8910041Z [command]/usr/bin/git config --local gc.auto 0
+2023-07-25T17:52:45.8949626Z ##[endgroup]
+2023-07-25T17:52:45.8952313Z ##[group]Setting up auth
+2023-07-25T17:52:45.8960339Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-07-25T17:52:45.9001787Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-07-25T17:52:45.9495175Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-07-25T17:52:45.9496788Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-07-25T17:52:45.9770364Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2023-07-25T17:52:45.9909091Z ##[endgroup]
+2023-07-25T17:52:45.9913531Z ##[group]Fetching the repository
+2023-07-25T17:52:45.9931495Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +0def438e5b282e03498bc240c6c25061ae6a9e4c:refs/remotes/origin/mdp/actions
+2023-07-25T17:52:46.3258839Z remote: Enumerating objects: 19, done.        
+2023-07-25T17:52:46.3259812Z remote: Counting objects:   5% (1/19)        
+2023-07-25T17:52:46.3260600Z remote: Counting objects:  10% (2/19)        
+2023-07-25T17:52:46.3261670Z remote: Counting objects:  15% (3/19)        
+2023-07-25T17:52:46.3262350Z remote: Counting objects:  21% (4/19)        
+2023-07-25T17:52:46.3262853Z remote: Counting objects:  26% (5/19)        
+2023-07-25T17:52:46.3317187Z remote: Counting objects:  31% (6/19)        
+2023-07-25T17:52:46.3317562Z remote: Counting objects:  36% (7/19)        
+2023-07-25T17:52:46.3317866Z remote: Counting objects:  42% (8/19)        
+2023-07-25T17:52:46.3318177Z remote: Counting objects:  47% (9/19)        
+2023-07-25T17:52:46.3318481Z remote: Counting objects:  52% (10/19)        
+2023-07-25T17:52:46.3318776Z remote: Counting objects:  57% (11/19)        
+2023-07-25T17:52:46.3319055Z remote: Counting objects:  63% (12/19)        
+2023-07-25T17:52:46.3319342Z remote: Counting objects:  68% (13/19)        
+2023-07-25T17:52:46.3319635Z remote: Counting objects:  73% (14/19)        
+2023-07-25T17:52:46.3319912Z remote: Counting objects:  78% (15/19)        
+2023-07-25T17:52:46.3320221Z remote: Counting objects:  84% (16/19)        
+2023-07-25T17:52:46.3320507Z remote: Counting objects:  89% (17/19)        
+2023-07-25T17:52:46.3320777Z remote: Counting objects:  94% (18/19)        
+2023-07-25T17:52:46.3321064Z remote: Counting objects: 100% (19/19)        
+2023-07-25T17:52:46.3321364Z remote: Counting objects: 100% (19/19), done.        
+2023-07-25T17:52:46.3321694Z remote: Compressing objects:   7% (1/13)        
+2023-07-25T17:52:46.3321991Z remote: Compressing objects:  15% (2/13)        
+2023-07-25T17:52:46.3322300Z remote: Compressing objects:  23% (3/13)        
+2023-07-25T17:52:46.3322606Z remote: Compressing objects:  30% (4/13)        
+2023-07-25T17:52:46.3322897Z remote: Compressing objects:  38% (5/13)        
+2023-07-25T17:52:46.3323194Z remote: Compressing objects:  46% (6/13)        
+2023-07-25T17:52:46.3323495Z remote: Compressing objects:  53% (7/13)        
+2023-07-25T17:52:46.3323910Z remote: Compressing objects:  61% (8/13)        
+2023-07-25T17:52:46.3324933Z remote: Compressing objects:  69% (9/13)        
+2023-07-25T17:52:46.3325247Z remote: Compressing objects:  76% (10/13)        
+2023-07-25T17:52:46.3325542Z remote: Compressing objects:  84% (11/13)        
+2023-07-25T17:52:46.3325850Z remote: Compressing objects:  92% (12/13)        
+2023-07-25T17:52:46.3326430Z remote: Compressing objects: 100% (13/13)        
+2023-07-25T17:52:46.3326757Z remote: Compressing objects: 100% (13/13), done.        
+2023-07-25T17:52:46.3996979Z remote: Total 19 (delta 0), reused 19 (delta 0), pack-reused 0        
+2023-07-25T17:52:46.4154386Z From https://github.com/mdp/openobserve_github_action_logs
+2023-07-25T17:52:46.4155299Z  * [new ref]         0def438e5b282e03498bc240c6c25061ae6a9e4c -> origin/mdp/actions
+2023-07-25T17:52:46.4193199Z ##[endgroup]
+2023-07-25T17:52:46.4194277Z ##[group]Determining the checkout info
+2023-07-25T17:52:46.4195214Z ##[endgroup]
+2023-07-25T17:52:46.4195822Z ##[group]Checking out the ref
+2023-07-25T17:52:46.4202800Z [command]/usr/bin/git checkout --progress --force -B mdp/actions refs/remotes/origin/mdp/actions
+2023-07-25T17:52:46.4300789Z Switched to a new branch 'mdp/actions'
+2023-07-25T17:52:46.4302063Z branch 'mdp/actions' set up to track 'origin/mdp/actions'.
+2023-07-25T17:52:46.4311568Z ##[endgroup]
+2023-07-25T17:52:46.4367126Z [command]/usr/bin/git log -1 --format='%H'
+2023-07-25T17:52:46.4404854Z '0def438e5b282e03498bc240c6c25061ae6a9e4c'
+2023-07-25T17:52:46.4859459Z ##[group]Run actions/setup-node@v3
+2023-07-25T17:52:46.4859917Z with:
+2023-07-25T17:52:46.4860183Z   node-version: 16.x
+2023-07-25T17:52:46.4860631Z   always-auth: false
+2023-07-25T17:52:46.4860986Z   check-latest: false
+2023-07-25T17:52:46.4861482Z   token: ***
+2023-07-25T17:52:46.4861817Z ##[endgroup]
+2023-07-25T17:52:46.7526034Z Found in cache @ /opt/hostedtoolcache/node/16.20.1/x64
+2023-07-25T17:52:46.7541121Z ##[group]Environment details
+2023-07-25T17:52:47.6281447Z node: v16.20.1
+2023-07-25T17:52:47.6309517Z npm: 8.19.4
+2023-07-25T17:52:47.6309816Z yarn: 1.22.19
+2023-07-25T17:52:47.6310477Z ##[endgroup]
+2023-07-25T17:52:47.6457880Z ##[group]Run npm ci
+2023-07-25T17:52:47.6458340Z [36;1mnpm ci[0m
+2023-07-25T17:52:47.6525306Z shell: /usr/bin/bash -e {0}
+2023-07-25T17:52:47.6525632Z ##[endgroup]
+2023-07-25T17:52:52.9280478Z 
+2023-07-25T17:52:52.9290643Z added 308 packages, and audited 309 packages in 5s
+2023-07-25T17:52:52.9294459Z 
+2023-07-25T17:52:52.9295290Z 34 packages are looking for funding
+2023-07-25T17:52:52.9296122Z   run `npm fund` for details
+2023-07-25T17:52:52.9311391Z 
+2023-07-25T17:52:52.9312100Z found 0 vulnerabilities
+2023-07-25T17:52:52.9635194Z ##[group]Run npm test
+2023-07-25T17:52:52.9635484Z [36;1mnpm test[0m
+2023-07-25T17:52:52.9694296Z shell: /usr/bin/bash -e {0}
+2023-07-25T17:52:52.9694574Z ##[endgroup]
+2023-07-25T17:52:53.4349320Z 
+2023-07-25T17:52:53.4350133Z > openobserve_github_action_logs@0.0.1 test
+2023-07-25T17:52:53.4350567Z > jest src
+2023-07-25T17:52:53.4350696Z 
+2023-07-25T17:52:54.5683712Z FAIL src/__tests__/parseLogs.test.js
+2023-07-25T17:52:54.5685279Z   ● Test suite failed to run
+2023-07-25T17:52:54.5685605Z 
+2023-07-25T17:52:54.5686105Z     Cannot find module '../parseLog' from 'src/__tests__/parseLogs.test.js'
+2023-07-25T17:52:54.5686456Z 
+2023-07-25T17:52:54.5686830Z        9 | const { it, expect } = require('@jest/globals');
+2023-07-25T17:52:54.5687205Z       10 |
+2023-07-25T17:52:54.5687679Z     > 11 | const parseLog = require('../parseLog')
+2023-07-25T17:52:54.5688033Z          |                  ^
+2023-07-25T17:52:54.5688335Z       12 |
+2023-07-25T17:52:54.5688967Z       13 | it('should return an array of JSON objects', () => {
+2023-07-25T17:52:54.5689915Z       14 |     const log = "2023-07-25T13:18:09.1418054Z [INFO] [elastic] [run.py:main:25] [metadata_url] https://api.github.com/repos/elastic/observability-ci/actions/runs/1000";
+2023-07-25T17:52:54.5690347Z 
+2023-07-25T17:52:54.5690832Z       at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/resolver.js:427:11)
+2023-07-25T17:52:54.5691969Z       at Object.require (src/__tests__/parseLogs.test.js:11:18)
+2023-07-25T17:52:54.5692271Z 
+2023-07-25T17:52:54.5718560Z Test Suites: 1 failed, 1 total
+2023-07-25T17:52:54.5719077Z Tests:       0 total
+2023-07-25T17:52:54.5719466Z Snapshots:   0 total
+2023-07-25T17:52:54.5719820Z Time:        0.588 s
+2023-07-25T17:52:54.5720235Z Ran all test suites matching /src/i.
+2023-07-25T17:52:54.5958696Z ##[error]Process completed with exit code 1.
+2023-07-25T17:52:54.6044274Z Post job cleanup.
+2023-07-25T17:52:54.7343548Z [command]/usr/bin/git version
+2023-07-25T17:52:54.7402573Z git version 2.41.0
+2023-07-25T17:52:54.7466848Z Temporarily overriding HOME='/home/runner/work/_temp/4c6e1142-8875-4ebc-8f1e-e38da3d1286f' before making global git config changes
+2023-07-25T17:52:54.7468191Z Adding repository directory to the temporary git global config as a safe directory
+2023-07-25T17:52:54.7476820Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/openobserve_github_action_logs/openobserve_github_action_logs
+2023-07-25T17:52:54.7537262Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-07-25T17:52:54.7586920Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-07-25T17:52:54.7900027Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-07-25T17:52:54.7932506Z http.https://github.com/.extraheader
+2023-07-25T17:52:54.7950081Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2023-07-25T17:52:54.7998755Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-07-25T17:52:54.8520603Z Cleaning up orphan processes
+
