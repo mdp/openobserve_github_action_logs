@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/mdp/openobserve_github_action_logs/actions"><img alt="build status" src="https://github.com/mdp/openobserve_github_action_logs/workflows/build-and-test/badge.svg"></a>
+  <a href="https://github.com/mdp/openobserve_github_action_logs/actions"><img alt="build status" src="https://github.com/mdp/openobserve_github_action_logs/actions/workflows/test.yml/badge.svg"></a>
 </p>
 
 # Upload Github Action logs to OpenObserve
